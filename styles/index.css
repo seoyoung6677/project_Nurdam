@@ -1,0 +1,316 @@
+.top_banner {
+    background:#0A46D7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    padding:12px 0;
+    gap:12px;
+}
+.top_banner .top_banner_center {
+    
+}
+.top_banner .top_banner_center a {
+    
+    
+}
+.top_banner .top_banner_center a span {
+    color:#fff;
+    display: flex;
+    align-items: center;
+}
+.top_banner .top_banner_center a span img {
+   
+}
+.top_banner .remove_btn {
+    position: absolute;
+    right:50px;
+}
+.top_banner .remove_btn img {
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding:0 50px;
+}
+header h1 {
+   
+}
+header h1 a {}
+header nav  {
+    display: flex;
+}
+header nav .gnb {
+    display: flex;
+    padding:7px 0;
+    align-items: center;
+    gap:70px;
+}
+header nav .gnb li {}
+header nav .gnb li a {
+    font-family: 1.063rem;
+}
+header .right_menu {
+    display: flex;
+    align-items: center;
+    gap:47px;
+}
+header .right_menu a {}
+header .right_menu a span {
+    font-size: 0.875rem;
+    color:#726E6E;
+    border-right: 1px solid #726E6E;
+}
+/* 메인 배너 ============================================== */
+main .main_banner {
+    position: relative;
+    width: 100%;
+}
+main .main_banner span {
+    position: absolute;
+    bottom:59px;
+    right:50px;
+    font-size: 3.75rem;
+    color:#fff;
+    font-weight: 700;
+    text-shadow:0 4px 6px rgba(0, 0, 0, 0.5);
+}
+main .main_banner #main_banner {}
+main .main_banner #main_banner .swiper-wrapper {}
+main .main_banner #main_banner .swiper-wrapper  .swiper-slide {
+   
+}
+main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide {}
+main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a {}
+main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a img {
+    max-width:1920px ;
+}
+.swiper-pagination {}
+
+/* 2행======================================== */
+.our_menu {}
+.our_menu .our-menu-container {
+    position: relative;
+    
+}
+.our_menu .our-menu-container .menu-title {
+    margin-top: 124px;
+    text-align: center;
+    margin-bottom:74px ;
+}
+.our_menu .our-menu-container .menu-title h1 {
+    font-size: 2.813rem;
+    font-weight:700;
+    margin-bottom:24px;
+}
+.our_menu .our-menu-container .menu-title p {}
+/* .our_menu .our-menu-container .bg {
+    background-color: #F5F5F5;
+    width: 1920px;
+    height:680px;
+    border: 3px solid red;
+    position:absolute;
+} */
+.our_menu .our-menu-container .menu-card-wrap   {
+    background-color:#f5f5f5 ;
+    max-width: 1920px;
+    height:900px;
+    display: flex;
+    justify-content:center;
+    gap:32px;
+    position: relative;
+}
+.our_menu .our-menu-container  .menu-card-wrap .new {
+    background: #FF7700;
+    width:270px;
+    height:382px;
+    border-radius: 20px;
+}
+.our_menu .our-menu-container .menu-card-wrap .new .title_info {
+    text-align: center;
+    padding:85px 48px;
+}
+.our_menu .our-menu-container .menu-card-wrap .new .title_info > * {
+    color:#fff;
+}
+.our_menu .our-menu-container .menu-card-wrap .new .title_info p:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight:600;
+    margin-bottom:37px;
+}
+.our_menu .our-menu-container .menu-card-wrap .new .title_info p:nth-child(2) {
+    font-size: 1.063rem;
+    font-weight: 200;
+    line-height:1.5;
+}
+.our_menu .our-menu-container .menu-card-wrap  .new .title_info p {}
+.our_menu .our-menu-container .menu-card-wrap  .menu-card {
+    /* width:270px;
+    height:382px; */
+    position: relative;
+    /* border:1px solid red; */
+    transform: translateY(-4px);
+    transition: transform 0.3s ease;
+    animation:floaty 6s cubic-bezier(0.42, 0, 0.58, 1) infinite ;
+    transition: all 0.5s ease;
+}
+.our_menu .our-menu-container .menu-card-wrap .menu-card:hover {
+    transform: translateY(-20px);
+}
+.our_menu .our-menu-container .menu-card-wrap #our_menu_swiper  .swiper-slide .menu-card .menu_img {
+    width:100%;
+    
+    
+}
+.our_menu .our-menu-container .menu-card-wrap  .menu-card .menu_img img {
+    display: block;
+    
+    
+}
+.our_menu .our-menu-container .menu-card-wrap #our_menu_swiper  .swiper-slide .menu-card img img {
+    display: inline-block;
+}
+.our_menu .our-menu-container .menu-card-wrap .menu-card .menu-text {
+    background-color: #0A46D7;
+    padding:20px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width:100%;
+    text-align: center;
+    
+}
+.our_menu .our-menu-container .menu-card-wrap .menu-card .menu-text h3 {
+    color:#fff;
+    padding:0 10px;
+    font-size: 1.5rem;
+    font-weight:600;
+}
+.our_menu .our-menu-container .menu-card-wrap .menu-card .menu-text p {
+    color:#fff;
+    padding:10px 10px;
+    font-size: 1.063rem;
+    font-weight: 200;
+}
+.card1,.card3 {top:211px;}
+.card2,.card4, .new {top:86px;}
+
+/* 애니메이션 */
+/* @keyframes floaty {
+    0% {transform: translate(0, 0);}
+    5% {transform: translate(0, -4px);}
+    10% {transform: translate(0, -8px);}
+    15% {transform: translate(0, -12px);}
+    20% {transform: translate(0, -16px);}
+    25% {transform: translate(0, -20px);}
+    30% {transform: translate(0px, -24px);}
+    35% {transform: translate(0px, -27px);}
+    40% {transform: translate(0px, -28px);}
+    45% {transform: translate(0px, -28px);}
+    50% {transform: translate(0px, -27px);}
+    55% {transform: translate(0px, -26px);}
+    60% {transform: translate(0px, -24px);}
+    65% {transform: translate(0px, -20px);}
+    70% {transform: translate(0px, -20px);}
+    75% {transform: translate(0px, -16px);}
+    80% {transform: translate(0px, -12px);}
+    80% {transform: translate(0px, -8px);}
+    90% {transform: translate(0px, -4px);}
+    90% {transform: translate(0px, -1px);}
+    100% {transform: translate(0, 0);}
+} */
+
+/* 3행 sale_menu 지금 가장 좋은 가격으로 만나는 널담 */
+.special_deal {
+    margin:171px 206px;
+}
+.special_deal .special_deal_wrap {}
+.special_deal .special_deal_wrap .special_deal_title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.special_deal .special_deal_wrap .special_deal_title  h1 {
+    font-size: 2.438rem;
+    font-weight:800;
+    margin-bottom: 21px;
+}
+.special_deal .special_deal_wrap .special_deal_title  p {
+    
+}
+.special_deal .special_deal_wrap #special_deal_swiper {}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper {
+    display: flex;
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide {}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container {}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_img {
+    
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_img img{
+    margin-bottom:20px;
+    
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap {
+    border:1px solid #C1C1C1;
+    border-radius:0 0 20px 20px;
+    padding:15px 30px;
+    height:180px;
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_name {
+    
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_name a {
+    font-size: 1.063rem;
+    font-weight:500;
+    
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_tag {
+    display:flex ;
+    gap:7px;
+    margin-top: 20px;
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_tag span {
+    border:1px solid #0A46D7;
+    border-radius: 20px;
+    padding:4px 13px;
+    display: inline-block;
+    font-size:0.625rem ;
+    font-weight: 500;
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:25px ;
+    
+    
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .special_deal_price {
+    display: flex;
+    gap:7px;
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .special_deal_price span:nth-child(1) {
+    font-size:1.25rem ;
+    font-weight: 500;
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .special_deal_price span:nth-child(2) {
+    font-size:1.25rem ;
+}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .special_deal_price span {}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .icon_wrap {}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .icon_wrap button {}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .icon_wrap button #whishlist_btn {}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .icon_wrap button #whishlist_btn img {}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .icon_wrap button #cart_btn {}
+.special_deal .special_deal_wrap #special_deal_swiper .swiper-wrapper .swiper-slide .special_deal_container .special_deal_info_wrap .special_deal_price_icon .icon_wrap button #cart_btn img {}
+.special_deal .more_btn {
+    margin:0 auto;
+}
+.special_deal .more_btn a {
+    font-size: 1.25rem;
+    border:1px solid #0A46D7;
+    padding:10px 80px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+}

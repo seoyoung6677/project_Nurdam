@@ -6,9 +6,17 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Nuldam</title>
+    <!--플러그인 필수 css cdn 연결-->
+    <!--플러그인 필수 css cdn 연결-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <!--플러그인 필수 JS cdn 연결-->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <div class="top_banner">
@@ -22,7 +30,7 @@
         </div>
     </div>
     <header>
-        <h1><a href="./images/Nuldam_logo.png" alt="logo"></a></h1>
+        <h1><a href="./index.html"><img src='./images/Nuldam_logo.png'  alt="logo"></a></h1>
         <nav>
             <ul class="gnb">
                 <li><a href="#">널담 메뉴 전체보기</a></li>
@@ -39,7 +47,7 @@
     </header>
     <main>
         <section class="main_banner" id="main_banner_wrap">
-            <span>Meals with meaning</span>
+            <span>"Meals with<br> meaning"</span>
             <div class="swiper" id="main_banner">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
@@ -52,24 +60,24 @@
                     <!-- <div class="swiper-slide slide2">slide2</div>
                     <div class="swiper-slide slide3">slide3</div> -->
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
         </section>
         <section class="our_menu">
             <div class="our-menu-container">
-                <div class="menu-tile-">
+                <div class="menu-title">
                     <h1>Our Menu</h1>
                     <p>당신의 기준에 맞춘 널담 추천 큐레이션</p>
                 </div>
                 <div class="bg"></div>
                 <div class="menu-card-wrap">
-                    <div class="menu-card">
+                    <div class="menu-card new">
                         <div class="title_info">
                             <p>“New Arrival”</p>
                             <p>널담에서 새로 출시된 라인& 제품</p>
                         </div>
                     </div>
-                    <div class="menu-card">
+                    <div class="menu-card card1">
                         <div class="menu_img">
                             <img src="./images/our-menu/our-menu_001.png" alt="Treats & Slip">
                         </div>
@@ -78,7 +86,7 @@
                             <p>“작은 휴식이 필요한 순간.”</p>
                         </div>
                     </div>
-                    <div class="menu-card">
+                    <div class="menu-card card2">
                         <div class="menu_img">
                             <img src="./images/our-menu/our-menu_002.png" alt="Treats & Slip">
                         </div>
@@ -87,7 +95,7 @@
                             <p>“당신의 식단 방식은?”</p>
                         </div>
                     </div>
-                    <div class="menu-card">
+                    <div class="menu-card card3">
                         <div class="menu_img">
                             <img src="./images/our-menu/our-menu_003.png" alt="Treats & Slip">
                         </div>
@@ -96,7 +104,7 @@
                             <p>“가볍게, 든든하게.”</p>
                         </div>
                     </div>
-                    <div class="menu-card">
+                    <div class="menu-card card4">
                         <div class="menu_img">
                             <img src="./images/our-menu/our-menu_004.png" alt="Treats & Slip">
                         </div>
@@ -107,6 +115,191 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="special_deal">
+            <div class="special_deal_wrap">
+                <div class="special_deal_title">
+                    <h1>“지금 가장 좋은 가격으로 만나는 널담”</h1>
+                    <p>지금바로 저렴한 가격으로 널담을 즐겨보세요</p>
+                </div>
+            <div class="swiper" id="special_deal_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="special_deal_container">
+                            <a href="#" class="special_deal_img">
+                                <img src="./images/sale_product_001.jpg" alt="고담백 르뱅 쿠키">
+                            </a>
+                            <div class="special_deal_info_wrap">
+                                <p class="special_deal_name">
+                                    <a href="#">널담 고단백 르뱅 쿠키 12개입(6ea X 2box, 6종)</a>
+                                </p>
+                                <div class="special_deal_tag">
+                                    <span> #단백질</span><span> #단백질</span><span> #단백질</span>
+                                </div>
+                                <div class="special_deal_price_icon">
+                                    <div class="special_deal_price">
+                                        <span class="product-discount">38%</span><span>15,900원</span>
+                                    </div>
+                                    <div class="icon_wrap">
+                                        <button type="buttton" id="whishlist_btn"><img src="./images/whishlist.png" alt="관심상품 등록"></button>
+                                        <button type="buttton" id="cart_btn"><img src="./images/cart.png" alt="장바구니"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="special_deal_container">
+                            <a href="#" class="special_deal_img">
+                                <img src="./images/sale_product_002.jpg" alt="널담 고단백 저당 배꼽 베이글 7종 8개입 ">
+                            </a>
+                            <div class="special_deal_info_wrap">
+                                <p class="special_deal_name">
+                                    <a href="#">널담 고단백 저당 배꼽 베이글 7종 8개입 </a>
+                                </p>
+                                <div class="special_deal_tag">
+                                    <span> #단백질</span><span> #단백질</span><span> #단백질</span>
+                                </div>
+                                <div class="special_deal_price_icon">
+                                    <div class="special_deal_price">
+                                        <span class="product-discount">50%</span><span>13,900원</span>
+                                    </div>
+                                    <div class="icon_wrap">
+                                        <button type="buttton" id="whishlist_btn"><img src="./images/whishlist.png" alt="관심상품 등록"></button>
+                                        <button type="buttton" id="cart_btn"><img src="./images/cart.png" alt="장바구니"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="special_deal_container">
+                            <a href="#" class="special_deal_img">
+                                <img src="./images/sale_product_003.jpg" alt="고담백 르뱅 쿠키">
+                            </a>
+                            <div class="special_deal_info_wrap">
+                                <p class="special_deal_name">
+                                    <a href="#">널담 고단백 르뱅 쿠키 12개입(6ea X 2box, 6종)</a>
+                                </p>
+                                <div class="special_deal_tag">
+                                    <span> #단백질</span><span> #단백질</span><span> #단백질</span>
+                                </div>
+                                <div class="special_deal_price_icon">
+                                    <div class="special_deal_price">
+                                        <span class="product-discount">38%</span><span>13,900원</span>
+                                    </div>
+                                    <div class="icon_wrap">
+                                        <button type="buttton" id="whishlist_btn"><img src="./images/whishlist.png" alt="관심상품 등록"></button>
+                                        <button type="buttton" id="cart_btn"><img src="./images/cart.png" alt="장바구니"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <div class="special_deal_container">
+                            <a href="#" class="special_deal_img">
+                                <img src="./images/sale_product_004.jpg" alt="고담백 르뱅 쿠키">
+                            </a>
+                            <div class="special_deal_info_wrap">
+                                <p class="special_deal_name">
+                                    <a href="#">널담 고단백 르뱅 쿠키 12개입(6ea X 2box, 6종)</a>
+                                </p>
+                                <div class="special_deal_tag">
+                                    <span> #단백질</span><span> #단백질</span><span> #단백질</span>
+                                </div>
+                                <div class="special_deal_price_icon">
+                                    <div class="special_deal_price">
+                                        <span class="product-discount">38%</span><span>13,900원</span>
+                                    </div>
+                                    <div class="icon_wrap">
+                                        <button type="buttton" id="whishlist_btn"><img src="./images/whishlist.png" alt="관심상품 등록"></button>
+                                        <button type="buttton" id="cart_btn"><img src="./images/cart.png" alt="장바구니"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <div class="special_deal_container">
+                            <a href="#" class="special_deal_img">
+                                <img src="./images/sale_product_001.jpg" alt="고담백 르뱅 쿠키">
+                            </a>
+                            <div class="special_deal_info_wrap">
+                                <p class="special_deal_name">
+                                    <a href="#">널담 고단백 르뱅 쿠키 12개입(6ea X 2box, 6종)</a>
+                                </p>
+                                <div class="special_deal_tag">
+                                    <span> #단백질</span><span> #단백질</span><span> #단백질</span>
+                                </div>
+                                <div class="special_deal_price_icon">
+                                    <div class="special_deal_price">
+                                        <span class="product-discount">38%</span><span>13,900원</span>
+                                    </div>
+                                    <div class="icon_wrap">
+                                        <button type="buttton" id="whishlist_btn"><img src="./images/whishlist.png" alt="관심상품 등록"></button>
+                                        <button type="buttton" id="cart_btn"><img src="./images/cart.png" alt="장바구니"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide6">
+                        <div class="special_deal_container">
+                            <a href="#" class="special_deal_img">
+                                <img src="./images/sale_product_001.jpg" alt="고담백 르뱅 쿠키">
+                            </a>
+                            <div class="special_deal_info_wrap">
+                                <p class="special_deal_name">
+                                    <a href="#">널담 고단백 르뱅 쿠키 12개입(6ea X 2box, 6종)</a>
+                                </p>
+                                <div class="special_deal_tag">
+                                    <span> #단백질</span><span> #단백질</span><span> #단백질</span>
+                                </div>
+                                <div class="special_deal_price_icon">
+                                    <div class="special_deal_price">
+                                        <span class="product-discount">38%</span><span>13,900원</span>
+                                    </div>
+                                    <div class="icon_wrap">
+                                        <button type="buttton" id="whishlist_btn"><img src="./images/whishlist.png" alt="관심상품 등록"></button>
+                                        <button type="buttton" id="cart_btn"><img src="./images/cart.png" alt="장바구니"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide7">
+                        <div class="special_deal_container">
+                            <a href="#" class="special_deal_img">
+                                <img src="./images/sale_product_001.jpg" alt="고담백 르뱅 쿠키">
+                            </a>
+                            <div class="special_deal_info_wrap">
+                                <p class="special_deal_name">
+                                    <a href="#">널담 고단백 르뱅 쿠키 12개입(6ea X 2box, 6종)</a>
+                                </p>
+                                <div class="special_deal_tag">
+                                    <span> #단백질</span><span> #단백질</span><span> #단백질</span>
+                                </div>
+                                <div class="special_deal_price_icon">
+                                    <div class="special_deal_price">
+                                        <span class="product-discount">38%</span><span>13,900원</span>
+                                    </div>
+                                    <div class="icon_wrap">
+                                        <button type="buttton" id="whishlist_btn"><img src="./images/whishlist.png" alt="관심상품 등록"></button>
+                                        <button type="buttton" id="cart_btn"><img src="./images/cart.png" alt="장바구니"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        </div>
+    </div>
+        <div class="more_btn">
+            <a href="#">more</a>
+        </div>
         </section>
     </main>
 </body>
