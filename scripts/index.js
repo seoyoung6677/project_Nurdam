@@ -70,3 +70,24 @@ const bestProduct = new Swiper('#best_product_swiper',{
     prevEl:"#best_product_swiper_next",
     }
 })
+
+
+ /*  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".TPO_collection-content");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.getAttribute("data-target");
+
+      // 1. 모든 tab에서 active 제거
+      tabs.forEach(t => t.classList.remove("active"));
+      // 2. 클릭한 tab에만 active 추가
+      tab.classList.add("active");
+
+      // 3. 모든 content에서 active 제거
+      contents.forEach(c => c.classList.remove("active"));
+      // 4. 클릭한 탭에 해당하는 content만 active 추가
+      document.getElementById(target).parentElement.classList.add("active");
+    });
+  });
+ */
