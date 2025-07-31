@@ -56,18 +56,52 @@ header nav .gnb {
 }
 header nav .gnb li {}
 header nav .gnb li a {
+    
+}
+header nav .gnb li:hover a {
+    color:#0A46D7;
+    
+}
+header nav .gnb li a {
     font-family: 1.063rem;
+    
+    position:relative;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+header nav .gnb li a::after {
+    content: "";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:2px;
+    background-color: #0A46D7;
+    transition : all 0.4s ease;
+    border-radius: 20px;
+}
+header nav .gnb li a:hover::after {
+    width:100%;
 }
 header .right_menu {
     display: flex;
     align-items: center;
-    gap:47px;
+    gap:20px;
 }
 header .right_menu a {}
 header .right_menu a span {
     font-size: 0.875rem;
     color:#726E6E;
     border-right: 1px solid #726E6E;
+    padding-right: 20px;
+}
+header .right_menu a:hover span {
+    color:#0A46D7;
+    font-weight: 600;
+}
+header .right_menu a:last-child span {
+    border:none;
 }
 /* 메인 배너 ============================================== */
 main .main_banner {
@@ -111,8 +145,18 @@ main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a im
     font-weight:700;
     margin-bottom:24px;
 }
+
+/* ::selection 드래그하면 색깔 바뀌능고 */
+.our_menu .our-menu-container .menu-title h1::selection {
+    background-color: #fff;
+    color:#0A46D7;
+}
 .our_menu .our-menu-container .menu-title p {
     color:#767676;
+}
+.our_menu .our-menu-container .menu-title p::selection{
+    background-color: #FF7700;
+    color:#fff;
 }
 /* .our_menu .our-menu-container .bg {
     background-color: #F5F5F5;
@@ -246,6 +290,15 @@ main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a im
     font-weight:800;
     margin-bottom: 21px;
 }
+
+.special_deal .special_deal_wrap .special_deal_title  h1::selection {
+    background-color: #fff;
+    color:#0A46D7;
+}
+.special_deal .special_deal_wrap .special_deal_title  p::selection {
+    background-color: #FF7700;
+    color:#fff;
+}
 .special_deal .special_deal_wrap .special_deal_title  p {
     color:#767676;
 }
@@ -351,6 +404,11 @@ main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a im
     justify-content: center;
     width:max-content;
 }
+.special_deal .more_btn:hover a{
+    background-color: #0A46D7;
+    color:#fff;
+    font-weight: 600;
+}
 .special_deal .more_btn a {
     font-size: 1.25rem;
     border:2px solid #0A46D7;
@@ -359,6 +417,7 @@ main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a im
     text-align: center;
     border-radius: 20px;
     color: #0A46D7;
+    transition: all 0.4s ease;
 }
 
 .special_deal_btn {
