@@ -3,7 +3,7 @@ body{min-width:1280px;
     max-width: 1920px;
     margin:0 auto}
 #wrap {
-    ;
+    
 }
 .top_banner {
     background:#0A46D7;
@@ -54,7 +54,7 @@ header nav .gnb {
     align-items: center;
     gap:70px;
 }
-header nav .gnb li {}
+header nav .gnb li {position: relative;}
 header nav .gnb li a {
     
 }
@@ -102,6 +102,42 @@ header .right_menu a:hover span {
 }
 header .right_menu a:last-child span {
     border:none;
+}
+
+/* lnb 서브 메뉴 */
+.lnb_wrap {
+    /* display: none; */ position:absolute;
+    top:90px;
+    left:0;
+    background: #fff;
+    width:100%;
+    z-index:800;
+
+}
+.lnb-container {
+    display: flex;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+
+}
+.gnb:hover + .lnb_wrap {
+    display: block;
+}
+#wrap header nav .gnb > .lnb_wrap {
+    /* background-color:yellow; */
+    width:max-content;/* 내용에 최대 크기에 맞추겠다. */
+    margin:0 auto;
+    /* 줄바꿈없이 정렬 */
+}
+
+.gnb > li {
+    /* background-color:aqua; */ height:45px;
+    /* 글자가 올라간 건 라인헤이트나 패딩 탑을 줘서 조절해주자 */
+    padding-top: 13px;
+}
+.lnb_depth1 li:hover a {
+   color:#57C2E2;
 }
 /* 메인 배너 ============================================== */
 main .main_banner {
