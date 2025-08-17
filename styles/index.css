@@ -106,8 +106,8 @@ header .right_menu a:last-child span {
 
 /* lnb 서브 메뉴 */
 .lnb_wrap {
-    /* display: none; */ position:absolute;
-    top:90px;
+    display: none; position:absolute;
+    top:100px;
     left:0;
     background: #fff;
     width:100%;
@@ -116,12 +116,21 @@ header .right_menu a:last-child span {
 }
 .lnb-container {
     display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
     gap:50px;
     justify-content: center;
     align-items: center;
-
+    border-top:1px solid #6E5F5F;
 }
-.gnb:hover + .lnb_wrap {
+.lnb-group {
+    margin:0; padding:0; 
+}
+.lnb-group:empty {
+    pointer-events: none;
+}
+nav:hover + .lnb_wrap,
+.lnb_wrap:hover {
     display: block;
 }
 #wrap header nav .gnb > .lnb_wrap {
@@ -132,9 +141,9 @@ header .right_menu a:last-child span {
 }
 
 .gnb > li {
-    /* background-color:aqua; */ height:45px;
+    /* background-color:aqua; */ height:50px;
     /* 글자가 올라간 건 라인헤이트나 패딩 탑을 줘서 조절해주자 */
-    padding-top: 13px;
+    padding-top: 17px;
 }
 .lnb_depth1 li:hover a {
    color:#57C2E2;
