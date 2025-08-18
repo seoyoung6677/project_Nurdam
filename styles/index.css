@@ -234,6 +234,36 @@ main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a im
 .swiper-pagination {}
 
 /* 2행======================================== */
+/* 메뉴카드 호버 */
+.menu-card::after {
+    position:absolute;
+    content: "";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(255, 102, 0, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+}
+.menu-card .hover-text {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+}
+.menu-card:hover::after {
+    opacity: 1;
+}
+.menu-card:hover .hover-text {
+    opacity: 1;
+}
 .our_menu {}
 .our_menu .our-menu-container {
     position: relative;
@@ -304,14 +334,16 @@ main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a im
 }
 .our_menu .our-menu-container .menu-card-wrap  .new .title_info p {}
 .our_menu .our-menu-container .menu-card-wrap  .menu-card {
-    /* width:270px;
-    height:382px; */
+    width:270px;
+    height:345px;
     position: relative;
     /* border:1px solid red; */
     transform: translateY(-4px);
     transition: transform 0.3s ease;
     animation:floaty 6s cubic-bezier(0.42, 0, 0.58, 1) infinite ;
     transition: all 0.5s ease;
+    cursor: pointer;
+    /* border:2px solid aqua; */
 }
 .our_menu .our-menu-container .menu-card-wrap .menu-card:hover {
     transform: translateY(-20px);
@@ -323,8 +355,8 @@ main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a im
 }
 .our_menu .our-menu-container .menu-card-wrap  .menu-card .menu_img img {
     display: block;
-    
-    
+    width:100%;
+    height:100%;
 }
 .our_menu .our-menu-container .menu-card-wrap #our_menu_swiper  .swiper-slide .menu-card img img {
     display: inline-block;
@@ -336,7 +368,7 @@ main .main_banner #main_banner .swiper-wrapper  .swiper-slide .banner_slide a im
     border-bottom-right-radius: 20px;
     width:100%;
     text-align: center;
-    
+    height:auto;
 }
 .our_menu .our-menu-container .menu-card-wrap .menu-card .menu-text h3 {
     color:#fff;
